@@ -1,0 +1,205 @@
+@charset 'utf-8';
+
+/**reset**/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url(../img/beijing.gif);
+}
+.center{
+	width: 710px;
+	position: absolute;
+	left: 50%;
+	margin-left: -355px;
+	margin-top: 10px;
+}
+table{
+	width: 710px;
+	border: 0;
+	border-spacing: 0;
+	background: #fff;
+}
+
+.body tbody{
+	border: 1px solid #eee;
+}
+mark{
+	background-color: transparent;
+	color: #f00;
+}
+strong{
+	color: #039;
+	font-size: 13px;
+}
+/********************************头部部分********************************/
+.header{
+	margin: 0 auto;
+}
+.header tbody tr:nth-child(1) td:nth-child(odd){
+	width: 29px;
+	height: 28px;
+	line-height: 0.7;
+}
+.header tbody tr:nth-child(1) td:nth-child(2){
+	width: 100%;
+	height: 82px;
+}
+.header tbody tr:nth-child(1) td:nth-child(2) img{
+	display: inline-block;
+	margin: 3px 0;
+}
+.header ul{
+	vertical-align: bottom;
+	display: inline-block;
+	width: 70%;
+	text-align: right;
+}
+.header li{
+	font-size: 12px;
+	line-height: 150%;
+	display: inline-block;
+	margin: 3px 0px;
+}
+.header a{
+	letter-spacing: 1px;
+	color: #f09;
+	text-decoration: none;
+}
+/********************************内容部分********************************/
+
+
+/****表格标题样式**/
+.body tbody tr td:nth-child(1)>span{
+	display: block;
+	padding: 20px 0;
+	font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+/**整体内容表格的样式**/
+
+
+.content{
+	width: 90%;
+	border-spacing:1px;
+	background: #ccc;
+	border-collapse:separate;
+	margin: 0 auto;
+	color: #333;
+}
+.content tr{
+	text-align: center;
+}
+.content td{
+	line-height: 150%;
+	padding: 2px;
+	font-size: 12px;
+	background: #fff;
+}
+
+.content tr td:nth-child(1){
+	width: 132px;
+	text-align: right;
+}
+.content tr td:nth-child(2){
+	text-align: left;
+	color: #00f;
+}
+.content .item >td{
+	background: #eee;
+	text-align: left!important;
+	text-indent: 2em;
+}
+/**第一行**/
+.content tr:nth-child(1) td{ 
+	background: url(../img/beijin1.gif);
+	text-align: center;
+}
+.link:visited{
+	color: #333;
+	text-decoration: none;
+}
+
+
+/***可辅导的科目**/
+.content tr td table[class="subject"]{
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: left;
+	width: 100%;
+	color: #333;
+}
+.content tr td table[class="subject"] td{
+	text-align: left;
+	background: none;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	letter-spacing: 1px;
+}
+.content tr td table[class="subject"] input{
+	position: relative;
+	top: 2.5px;
+	left: -1px;
+}
+/**方便授课区域**/
+.content tr td[class="area"]{
+	color:#333;
+	letter-spacing: 1px;
+	padding-left: 10px;
+}
+.content tr td[class="area"] input{
+	position: relative;
+	top: 2.5px;
+	left: -1px;
+}
+/**辅导方式**/
+.content tr td[class="means"] span{
+	color:#333;
+	letter-spacing: 1px;
+	position: relative;
+	left: 5px;
+}
+.content tr td[class="means"] input{
+	position: relative;
+	top: 2.5px;
+	left: -1px;
+}
+/**最后按钮提交样式**/
+.btn p{
+	padding: 35px 0;
+	text-align: center;
+}
+.btn p input[type='submit']{
+	width: 120px;
+	height: 30px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	border-radius: 4px;
+	background: #eee;
+	border: 0;
+	color: #333;
+	box-shadow: 1px 1px 10px 10px rgba(0,0,0,.1) inset,1px 1px 27px -34px rgba(0,0,0,.075);
+}
+/********************************页脚************************************/
+.footer{
+	margin: 0 auto;
+	text-align: center;
+	font-size: 12px;
+}
+.footer em{
+	color: #666;
+	font-style: normal; 
+}
+.footer tr:nth-child(2) td:nth-child(odd){
+	width: 29px;
+	height: 28px;
+	line-height: 0.7;
+
+}
+.footer img{
+	width: 29px;
+	height: 28px;
+}

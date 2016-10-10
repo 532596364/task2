@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://slbnew.console.aliyun.com/#/list/cn-hangzhou -->
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-start{border-spacing:1px 1px;-ms-zoom:1.0001;}.ng-animate-active{border-spacing:0px 0px;-ms-zoom:1;}</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="data-spm" content="5176">
+    
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+	
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+
+  	<script type="text/javascript" src="js/index.js"></script>
+   <script type="text/javascript">
+
+   		// function hidden_left(id) {
+   		// 	var element = document.getElementById(id);
+   		// 	var element2 = document.getElementById('box_click');
+   		// 	var ewidth = getStyle(element,'width');
+
+   		// 	var count = 0;
+   		// 	clearInterval(window.timer1);
+   		// 	if (ewidth == '180px') {
+   		// 		 timer1 = setInterval(function () {
+   		// 			element.style.width = 180-(count++)+'px';
+   		// 			element2.style.width = element.style.width;
+   		// 			if (count > 135) {
+   		// 				clearInterval(timer);
+   		// 				count =0;
+   		// 			}			
+   		// 		}, 1);
+   		// 	}else{
+   		// 		 timer1 = setInterval(function () {  					
+   		// 			element.style.width = 45+(count++)+'px';
+   		// 			element2.style.width = element.style.width;
+   		// 			if (count > 135) {
+   		// 				clearInterval(timer);
+   		// 				count =0;
+   		// 			}
+   		// 		}, 1);
+   		// 	}	
+   		// }
+   		// function updown(id) {
+   		// 	var element = document.getElementById(id);
+   		// 	var eheight = getStyle(element,'height');
+   		// 	var count = 0;
+   		// 	clearInterval(window.timer2);
+   		// 	if (eheight == '320px') {
+   		// 		 timer2 = setInterval(function () {
+   		// 			element.style.height = 320-(count++)+'px';
+   		// 			if (count > 320) {
+   		// 				clearInterval(timer2);
+   		// 				count =0;
+   		// 			}			
+   		// 		}, 1);
+   		// 	}else{
+   		// 		 timer2 = setInterval(function () {
+   		// 			element.style.height = (count++)+'px';
+   		// 			if (count > 320) {
+   		// 				clearInterval(timer2);
+   		// 				count =0;
+   		// 			}
+   		// 		}, 1);
+   		// 	}	
+   		// }
+   		function hidden_left(id){
+   			var idstr = "#"+id;
+   			if ($(idstr).css('width') == '180px') {
+   				$(idstr).animate({
+   				'attr' : 'w',
+   				'target': 45,
+   				});
+   			}else{
+   				$(idstr).animate({
+   				'attr' : 'w',
+   				'target': 180,
+   				});
+   			}
+   		}
+   		function updown(id) {
+   			var idstr = "#"+id;
+   			if ($(idstr).css('height') == '320px') {
+   				$(idstr).animate({
+   				'attr' : 'h',
+   				'target': 0,
+   				'speed': 2,
+   				});
+   				$('#service').removeClass('fa-caret-down').addClass('fa-caret-right');
+   			}else{
+   				$(idstr).animate({
+   				'attr' : 'h',
+   				'target': 320,
+   				'speed': 2,
+   				});
+   				$('#service').removeClass('fa-caret-right').addClass('fa-caret-down');
+   			}
+   		}
+   </script>
+    
+   
+
+
+</head>
+
+<body>
+		
+	<div class="viewFramework-body viewFramework-sidebar-full">
+		<div id="nav_box" class="viewFramework-sidebar" >
+			<div class="sidebar-content">
+				<div class="sidebar-inner ng-scope">
+					<div id="box_click" onclick="hidden_left('nav_box')" class="sidebar-fold glyphicon glyphicon-tasks">
+						
+					</div>
+					<div  class="sidebar-nav main-nav">
+						<div class="sidebar-title">
+							<span id="service" class="sidebar-title-icon fa fa-caret-down"></span>
+							<span  onclick="updown('nav_link')" class="sidebar-title-text ng-binding">产品与服务</span>
+						</div>
+						<ul id="nav_link" class="sidebar-trans" style="height: 320px;">
+							<li class="nav-item">
+								<a href="" class="sidebar-trans">
+									<div class="nav-icon sidebar-trans">
+										<span class="fa fa-server"></span>
+									</div>
+									<span class="nav-title ng-binding">云服务器 ECS&nbsp;</span>
+								</a>
+							</li>
+							<li class="nav-item ng-scope">
+								<a href="" class="sidebar-trans ng-scope" aliyun-console-spm="10rds" sidebar-tooltip="" tooltip-append-to-body="true" tooltip-placement="right" tooltip-animation="true" data-spm-click="gostr=/aliyun;locaid=d10rds;;">
+									<div class="nav-icon sidebar-trans">
+										<span class="fa fa-retweet"></span>
+									</div>
+									<span class="nav-title ng-binding">云数据库 RDS 版&nbsp;</span>
+								</a>
+							</li>
+							<li class="nav-item ng-scope">
+								<a href="" class="sidebar-trans ng-scope">
+									<div class="nav-icon sidebar-trans">
+										<span class="fa fa-sitemap"></span>
+									</div>
+									<span class="nav-title ng-binding">负载均衡&nbsp;</span>
+								</a>
+							</li>
+							<li class="nav-item ng-scope">
+								<a href="" class="sidebar-trans ng-scope">
+									<div class="nav-icon sidebar-trans">
+										<span class="fa fa-database"></span>
+									</div>
+									<span class="nav-title ng-binding">对象存储 OSS&nbsp;</span>
+								</a>
+							</li>
+							<li class="nav-item ng-scope">
+								<a href="" aliyun-console-spm="10domain" sidebar-tooltip="" tooltip-append-to-body="true" tooltip-placement="right" tooltip-animation="true" data-spm-click="gostr=/aliyun;locaid=d10domain;;">
+									<div class="nav-icon sidebar-trans">
+										<span class="fa fa-globe"></span>
+									</div>
+									<span class="nav-title ng-binding">域名&nbsp;</span>
+								</a>
+							</li>
+							<li class="nav-item ng-scope" >
+								<a href="" class="sidebar-trans ng-scope">
+									<div class="nav-icon sidebar-trans">
+										<span class="fa fa-language"></span>
+									</div>
+									<span class="nav-title ng-binding">云解析 DNS&nbsp;</span>
+								</a>
+							</li>
+							<li class="nav-item ng-scope">
+								<a href="" class="sidebar-trans ng-scope" >
+									<div class="nav-icon sidebar-trans">
+										<span class="fa fa-shield"></span>
+									</div>
+									<span class="nav-title ng-binding">服务器安全（安骑士）&nbsp;</span>
+								</a>
+							</li>
+							<li class="nav-item ng-scope">
+								<a href="" class="sidebar-trans ng-scope" >
+									<div class="nav-icon sidebar-trans">
+										<span class="fa fa-wifi"></span>
+									</div>
+									<span class="nav-title ng-binding">态势感知&nbsp;</span>
+								</a>
+							</li>
+							<li ng-if="productsMap[productId] &amp;&amp; currentEntry">
+								<a href="" class="sidebar-trans ng-scope" >
+									<div class="nav-icon sidebar-trans">
+										<span class="icon-slb"></span>
+									</div>
+									<span class="nav-title ng-binding">负载均衡&nbsp;</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="sidebar-nav sidebar-nav-fold" ng-class="{&#39;sidebar-nav-fold&#39;:navConfig.service.folded}">
+						<div class="sidebar-title">
+							<div class="sidebar-title-inner ng-scope" sidebar-tooltip="" tooltip-append-to-body="true" tooltip-placement="right" tooltip-animation="true">
+								<span class="sidebar-title-icon">
+									<span class="fa fa-caret-down"></span>
+								</span>
+								<span class="sidebar-title-text ng-binding">用户中心</span>
+								<span class="sidebar-manage ng-scope" sidebar-tooltip="自定义用户中心" ></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+
+</body>
+</html>

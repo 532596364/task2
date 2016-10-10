@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8"/>
+	<title>盒模型</title>
+	<link rel="stylesheet" type="text/css" href="css/hezi.css">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<!--正常盒模型-->
+	<div class="context_box">
+			<table>
+				<thead>
+					<tr>
+						<th>正常盒模型</th>
+						<th>设定的宽高size</th>
+						<th>margin</th>
+						<th>border</th>
+						<th>padding</th>
+						<th>content</th>
+						<th>box</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>红色盒子</td>
+						<td>200*200</td>
+						<td>25</td>
+						<td>25</td>
+						<td>25</td>
+						<td>200*200</td>
+						<td>300*300</td>
+					</tr>
+					<tr>
+						<td>黄色盒子</td>
+						<td>150*150</td>
+						<td>0</td>
+						<td>25</td>
+						<td>25</td>
+						<td>150*150</td>
+						<td>250*250</td>
+					</tr>
+					<tr>
+						<td>绿色盒子</td>
+						<td>150*150</td>
+						<td>0</td>
+						<td>0</td>
+						<td>25</td>
+						<td>150*150</td>
+						<td>200*200</td>
+					</tr>
+					<tr>
+						<td>蓝色盒子</td>
+						<td>150*150</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>150*150</td>
+						<td>150*150</td>
+					</tr>
+					<tr>
+						<td>图2蓝色盒子</td>
+						<td>150*150</td>
+						<td>25</td>
+						<td>0</td>
+						<td>0</td>
+						<td>100*150</td>
+						<td>100*150</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="7"><h3>box盒模型大小=content+padding+border</h3></td>
+					</tr>
+				</tfoot>
+			</table>
+		<div class="content_box1 flexcenter">
+			<div class="con_margin flexcenter">
+				<span>200*200 </span>
+				
+				<div class="con_border flexcenter">
+					<span>150*150 </span>
+				
+					<div class="con_padding flexcenter">
+						<span>150*150 </span>
+					
+						<div class="con_content flexcenter">
+							<span>150*150</span>
+					
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="content_box2 flexcenter">
+			<div class="con_margin flexcenter">
+				<span>200*200 </span>
+
+				<div class="con_border flexcenter">
+					<span>150*150 </span>
+	
+					<div class="con_padding flexcenter">
+						<span>150*150 </span>
+				
+						<div class="con_content flexcenter">
+							<span>150*150 </span>
+				
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<!--怪异盒模型-->
+	<div class="border_box">
+		<table>
+				<thead>
+					<tr>
+						<th>怪异盒模型</th>
+						<th>设定的宽高size</th>
+						<th>margin</th>
+						<th>border</th>
+						<th>padding</th>
+						<th>content</th>
+						<th>box</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>红色盒子</td>
+						<td>150*150</td>
+						<td>25</td>
+						<td>25</td>
+						<td>25</td>
+						<td>0*50</td>
+						<td>100*150</td>
+					</tr>
+					<tr>
+						<td>黄色盒子</td>
+						<td>250*250</td>
+						<td>0</td>
+						<td>25</td>
+						<td>25</td>
+						<td>150*150</td>
+						<td>250*250</td>
+					</tr>
+					<tr>
+						<td>绿色盒子</td>
+						<td>300*300</td>
+						<td>0</td>
+						<td>0</td>
+						<td>25</td>
+						<td>250*250</td>
+						<td>300*300</td>
+					</tr>
+					<tr>
+						<td>蓝色盒子</td>
+						<td>350*350</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>350*350</td>
+						<td>350*350</td>
+					</tr>
+					<tr>
+						<td>图2蓝色盒子</td>
+						<td>350*350</td>
+						<td>25</td>
+						<td>0</td>
+						<td>0</td>
+						<td>350*350</td>
+						<td>350*350</td>
+					</tr>
+					<tr>
+						<td>图2红色盒子</td>
+						<td>150*150</td>
+						<td>0</td>
+						<td>25</td>
+						<td>25</td>
+						<td>50*50</td>
+						<td>150*150</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="7"><h3>box盒模型大小=content+padding+border</h3></td>
+					</tr>
+				</tfoot>
+			</table>
+		<div class="border_box1 flexcenter">
+			<div class="bor_content flexcenter">
+				<span>350*350</span>
+				<div class="bor_padding flexcenter">
+					<span>300*300</span>
+					<div class="bor_border flexcenter">
+						<span>250*250</span>
+						<div class="bor_margin flexcenter">
+							<span>150*150</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="border_box2 flexcenter">
+			<div class="bor_content flexcenter">
+				<span>350*350</span>
+				<div class="bor_padding flexcenter">
+					<span>300*300</span>
+					<div class="bor_border flexcenter">
+						<span>250*250</span>
+						<div class="bor_margin flexcenter">
+							<span>150*150</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

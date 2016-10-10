@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/flex.css" />
+	<!--实现排序动作的js，不太多就没有另建目录保存文件-->
+	<script type="text/javascript">
+		var getNum = function (num) {
+			var ids = [];
+			ids.push(document.getElementById('a'));
+			ids.push(document.getElementById('b'));
+			ids.push(document.getElementById('c'));
+			ids.push(document.getElementById('d'));
+			ids.push(document.getElementById('e'));
+			ids.push(document.getElementById('f'));
+			for (var i = 0; i < ids.length; i++) {
+				 var style = window.getComputedStyle(ids[i],null);
+				 if (num == style.order) {
+				 	return ids[i];
+				 }
+			}
+			return -1;
+		};
+		function change(num,id) {
+			var id_target =getNum(num);
+			var id_get =document.getElementById(id);
+			var style1 =  window.getComputedStyle(id_target, null);
+			var style2 =  window.getComputedStyle(id_get, null);
+			if (id_target != id_get) {
+				var temp = style1.order;
+				id_target.style.order = style2.order;
+				id_get.style.order = temp;
+			}
+		}
+	</script>
+</head>
+<body>
+	<!-- 新式弹性盒模型排序-->
+
+	<!-- 按钮组，可调节模块顺序-->
+	<div class="btn-group btn-group1">
+		<button onclick="change(1,'a')">第一块放第一</button>
+		<button onclick="change(1,'b')">第二块放第一</button>
+		<button onclick="change(1,'c')">第三块放第一</button>
+		<button onclick="change(1,'d')">第四块放第一</button>
+		<button onclick="change(1,'e')">第五块放第一</button>
+		<button onclick="change(1,'f')">第六块放第一</button>
+	</div>
+	<div class="btn-group btn-group2">
+		<button onclick="change(2,'a')">第一块放第二</button>
+		<button onclick="change(2,'b')">第二块放第二</button>
+		<button onclick="change(2,'c')">第三块放第二</button>
+		<button onclick="change(2,'d')">第四块放第二</button>
+		<button onclick="change(2,'e')">第五块放第二</button>
+		<button onclick="change(2,'f')">第六块放第二</button>
+	</div>
+	<div class="btn-group btn-group3">
+		<button onclick="change(3,'a')">第一块放第三</button>
+		<button onclick="change(3,'b')">第二块放第三</button>
+		<button onclick="change(3,'c')">第三块放第三</button>
+		<button onclick="change(3,'d')">第四块放第三</button>
+		<button onclick="change(3,'e')">第五块放第三</button>
+		<button onclick="change(3,'f')">第六块放第三</button>
+	</div>
+	<div class="btn-group btn-group4">
+		<button onclick="change(4,'a')">第一块放第四</button>
+		<button onclick="change(4,'b')">第二块放第四</button>
+		<button onclick="change(4,'c')">第三块放第四</button>
+		<button onclick="change(4,'d')">第四块放第四</button>
+		<button onclick="change(4,'e')">第五块放第四</button>
+		<button onclick="change(4,'f')">第六块放第四</button>
+	</div>
+	<div class="btn-group btn-group5">
+		<button onclick="change(5,'a')">第一块放第五</button>
+		<button onclick="change(5,'b')">第二块放第五</button>
+		<button onclick="change(5,'c')">第三块放第五</button>
+		<button onclick="change(5,'d')">第四块放第五</button>
+		<button onclick="change(5,'e')">第五块放第五</button>
+		<button onclick="change(5,'f')">第六块放第五</button>
+	</div>
+	<div class="btn-group btn-group6">
+		<button onclick="change(6,'a')">第一块放第六</button>
+		<button onclick="change(6,'b')">第二块放第六</button>
+		<button onclick="change(6,'c')">第三块放第六</button>
+		<button onclick="change(6,'d')">第四块放第六</button>
+		<button onclick="change(6,'e')">第五块放第六</button>
+		<button onclick="change(6,'f')">第六块放第六</button>
+	</div>
+
+
+	<!-- 使用了新式弹性盒子的模块-->
+	<div class="container" >
+		<div id="a">
+			第一块
+		</div>
+		<div id="b">
+			第二块
+		</div>
+		<div id="c">
+			第三块
+		</div>
+		<div id="d">
+			第四块
+		</div>
+		<div id="e">
+			第五块
+		</div>
+		<div id="f">
+			第六块
+		</div>
+	</div>
+</body>
+</html>

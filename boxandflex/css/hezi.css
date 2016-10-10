@@ -1,0 +1,232 @@
+@charset 'uft-8';
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 14px;
+}
+body{
+	overflow: hidden;
+}
+hr{
+	margin: 0 0 0px 0;
+}
+/************居中****************/
+.flexcenter{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	
+}
+.context_box{
+	width: 100%;
+	height: 450px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+.border_box{
+	width: 100%;
+	height: 450px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+/***************说明部分***********************/
+		table{
+			width: 500px;
+			border-collapse: collapse;
+			border: 1px solid #eee;
+			position: relative;
+			top: 150px;
+			text-align: center;
+		}
+		td{
+			border: 1px solid #eee;
+			width: auto;
+		}
+
+/***************正常盒模型的实验**************************/
+.content_box1{
+	position: relative;
+	top: 30px;
+	width: 350px;
+	height: 350px;
+	background: rgb(255,255,255);
+	border: 1px solid #eee;
+	z-index: 6;
+	
+}
+.content_box2{
+	position: relative;
+	top: 30px;
+	width: 350px;
+	height: 350px;
+	background: rgb(255,255,255);
+	border: 1px solid #eee;
+	z-index: 6;
+}
+
+
+.con_content{
+	width: 150px;
+	height: 150px;
+	background: rgb(139,181,192);
+	z-index: 10;
+	position: relative;
+}
+
+/*********对第二个案例的content加了个margin。。*********************************/
+.content_box2 .con_content{
+	margin: 25px;
+}
+/******************************************/
+.con_padding{
+	width: 150px;
+	height: 150px;
+	background: rgb(194,207,138);
+	z-index: 9;
+	padding: 25px;
+	position: relative;
+
+}
+.con_border{
+	width: 150px;
+	height: 150px;
+	background: rgb(253,221,155);
+	z-index: 9;
+	padding: 25px;
+	border: 25px solid rgb(253,221,155);
+	position: relative;
+
+}
+.con_margin{
+	width: 200px;
+	height: 200px;
+	background: rgb(248,142,139);
+	z-index: 7;
+	padding: 25px;
+	border: 25px solid rgb(248,142,139);
+	position: relative;
+	margin: 25px;
+}
+span{
+	display: block;
+	width: 400px;
+	height: 30px;
+	position: absolute;
+	z-index: 20;
+}
+
+.con_content >span{
+	top: 0;
+	left: 5px;
+}
+
+.con_padding >span{
+	top: 5px;
+	left: 5px;
+}
+
+.con_border >span{
+	top: -20px;
+	left: -20px;
+}
+
+.con_margin >span{
+	top: -20px;
+	left: -20px;
+}
+
+
+
+
+
+
+/***************怪异盒模型的实验**************************/
+.border_box div{
+	box-sizing: border-box!important;
+}
+.border_box1{
+	position: relative;
+	top: 30px;
+	width: 400px;
+	height: 400px;
+	background: rgb(255,255,255);
+	border: 1px solid #eee;
+	z-index: 6;
+
+}
+.border_box2{
+	position: relative;
+	top: 30px;
+	width: 400px;
+	height: 400px;
+	background: rgb(255,255,255);
+	border: 1px solid #eee;
+	z-index: 6;
+}
+
+
+.bor_content{
+	width: 350px;
+	height: 350px;
+	background: rgb(139,181,192);
+	z-index: 10;
+	position: relative;
+}
+
+/*********对第二个案例的content加了个margin。。*********************************/
+.border_box2 .bor_content{
+	margin: 25px;
+}
+.border_box1 .bor_margin{
+	margin: 25px;
+}
+/******************************************/
+.bor_padding{
+	width: 300px;
+	height: 300px;
+	background: rgb(194,207,138);
+	z-index: 9;
+	padding: 25px;
+	position: relative;
+
+}
+.bor_border{
+	width: 250px;
+	height: 250px;
+	background: rgb(253,221,155);
+	z-index: 9;
+	padding: 25px;
+	border: 25px solid rgb(253,221,155);
+	position: relative;
+
+}
+.bor_margin{
+	width: 150px;
+	height: 150px;
+	background: rgb(248,142,139);
+	z-index: 7;
+	padding: 25px;
+	border: 25px solid rgb(248,142,139);
+	position: relative;
+	
+}
+.bor_content >span{
+	top: 5px;
+	left: 5px;
+}
+.bor_padding >span{
+	top: 5px;
+	left: 5px;
+}
+.bor_border >span{
+	top: -20px;
+	left: -20px;
+}
+.bor_margin >span{
+	top: -20px;
+	left: -20px;
+}

@@ -1,0 +1,57 @@
+@charset 'utf-8';
+
+
+/***********最大的外容器样式**************/
+.container{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+/***********除了icondiv之外的容器样式**************/
+.container div:not(.icon){
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+/***********top样式**************/
+.top{
+	background: #dff0d8;
+	margin: -153px 0 0 -50px;
+	box-shadow: inset -1px 1px 0 rgba(0,0,0,.1),12px -12px 27px -9px rgba(0,0,0,.3);
+}
+/***********right样式**************/
+.right{
+	background: #f2dede;
+	margin: -50px 0 0 53px;
+	box-shadow:inset -1px -1px 0 rgba(0,0,0,.1),12px 12px 14px -9px rgba(0,0,0,.3);
+}
+/***********middle样式**************/
+.middle{
+	background: #d9edf7;
+	margin: -50px 0 0 -50px;
+	box-shadow: inset -1px 1px 0 rgba(0,0,0,.1),1px 1px 1px 1px rgba(0,0,0,.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/***********bottom样式**************/
+.bottom{
+	background: #fcf8e3;
+	margin: 53px 0 0 -50px;
+	box-shadow:inset -1px -1px 0 rgba(0,0,0,.1), 12px 12px 27px -9px rgba(0,0,0,.3);
+}
+/***********left样式**************/
+.left{
+	background: #d8bfd8;
+	margin: -50px 0 0 -153px;
+	box-shadow: inset 1px -1px 0 rgba(0,0,0,.1),-12px 12px 27px -9px rgba(0,0,0,.3);
+}
+/***********icon样式**************/
+.icon{
+	width: 24px;
+	height: 24px;
+	background: transparent url(../img/icon.png) no-repeat center;
+	z-index: 99;
+}

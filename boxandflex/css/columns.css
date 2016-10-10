@@ -1,0 +1,24 @@
+@charset 'utf-8';
+
+
+/******************columns分栏*********************/
+.columns-con{
+	margin-top: 50px;
+	columns: auto 3;
+	column-gap: 80px;
+	-webkit-column-rule-style:dashed;
+	column-rule-style:dashed;
+}
+.columns-con p{
+	text-indent: 2rem;
+	color: #777;
+	padding: 0 25px;
+	margin: 0;
+	line-height: 2.5;
+}
+.title {
+	text-align: center;
+	column-span:all;
+	color: #444;
+	margin-bottom: 50px;
+}

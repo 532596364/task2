@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+/******************老式弹性盒子居中*********************/
+.container{
+	display:-webkit-box;
+	width: 100%;
+	height: 100vh;
+	background: #d9edf7;
+	-webkit-box-pack:center;
+	-webkit-box-align:center ;
+	
+}
+.a{
+	height: 200px;
+	width: 200px;
+	background: #dff0d8;
+}
+.b{
+	height: 200px;
+	width: 200px;
+	background: #f2dede;
+}
+.c{
+	height: 200px;
+	width: 200px;
+	background: #fcf8e3;
+}
